@@ -1,0 +1,17 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - '**/generated_migrations/**'
+
+linter:
+  rules:
+    lines_longer_than_80_chars: false
+    public_member_api_docs: false
+    prefer_int_literals: false
+    avoid_redundant_argument_values: false
+    flutter_style_todos: false
+    join_return_with_assignment: false
+    require_trailing_commas: false

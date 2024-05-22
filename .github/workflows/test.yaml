@@ -1,0 +1,31 @@
+name: test
+run-name: Test
+on: [ push ]
+jobs:
+  linters:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.19.6'
+          channel: 'stable'
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
+          cache-path: '${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:'
+          architecture: x64 # optional, x64 or arm64
+
+      - name: Disable Analytics
+        run: make disable_analytics
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Check Dart Code format
+        run: make check_format
+
+      - name: Run Lint
+        run: make lint
+
+      - name: Run tests
+        run: make test
