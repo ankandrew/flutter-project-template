@@ -9,12 +9,11 @@ This template is designed to kickstart your next Flutter project with a solid fo
 ## 🧩 Features
 
 - **Best Practices**: Following Flutter's best practices for a scalable and maintainable codebase. 📏🛠️
-- **Makefile**: Simplifies common tasks like cleaning the project and running tests with easy-to-use commands. 📂✨
-- **Linter Rules**: Provided by `very_good_analysis`, ensuring code quality and consistency across the project. 🔍✔️
+- **Makefile**: Simplifies common tasks like running tests or linting with easy-to-use commands. 📂✨
+- **Linter Rules**: Provided by `very_good_analysis`, ensuring code quality and consistency. 🔍✔️
 - **Organized Test Folder Structure**: Keeping your tests well-structured and easy to manage. 📁✅
 - **.editorconfig**: Maintains consistent coding styles between different editors and IDEs. 📝🔧
-- **GitHub Actions Workflow**: Automated workflows for continuous integration and ensuring code quality. Includes checks
-  for formatting, linting, and testing. 🤖✔️
+- **GitHub Actions Workflow**: CI workflow to ensure code quality. 🤖✔️
 
 ## 🛠️ Getting Started
 
